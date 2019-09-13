@@ -18,8 +18,5 @@
     "concurrently": "^4.1.2",
     "webpack": "^4.40.1",
     "webpack-cli": "^3.3.8"
-  },
-  "dependencies": {
-    "isomorphic-react": "^1.0.0"
   }
 }
