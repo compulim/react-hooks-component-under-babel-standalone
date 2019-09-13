@@ -1,3 +1,5 @@
+# React Hooks component under Babel Standalone and pure JavaScript
+
 This is a sandbox for trying out a minimal setup for the following:
 
 - Build a UI library that use React Hooks
@@ -12,9 +14,9 @@ This is a sandbox for trying out a minimal setup for the following:
 We are not testing Full Babel in this repository because it is relatively easy to done.
 
 We are testing the following matrix:
-- Babel Standalone
+- Initialize UI by JSX via Babel Standalone
    - With React loaded
    - Without loading React
-- Pure JavaScript
+- Initialize UI by pure JavaScript, no JSX
    - With React loaded
    - Without loading React
