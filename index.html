@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16.9.0/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.9.0/umd/react-dom.development.js"></script>
+    <script src="packages/bundle/dist/helloworld.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      !function () {
+        'use strict';
+
+        const { HelloWorld: { ReactHelloWorld } } = window;
+
+        if (window.ReactDOM) {
+          window.ReactDOM.render(
+            <ReactHelloWorld />,
+            document.getElementById('root')
+          );
+        } else {
+          window.HelloWorld.renderHelloWorld(document.getElementById('root'));
+        }
+      }();
+    </script>
+  </body>
+</html>

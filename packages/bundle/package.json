@@ -1,0 +1,30 @@
+{
+  "name": "bundle",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npm run build:babel && npm run build:webpack",
+    "build:babel": "babel --out-dir lib src",
+    "build:webpack": "webpack",
+    "start": "concurrently --kill-others --names \"babel,webpack\" \"npm run build:babel -- --watch\" \"npm run build:webpack -- --watch\""
+  },
+  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "concurrently": "^4.1.2",
+    "webpack": "^4.40.0",
+    "webpack-cli": "^3.3.8"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.0",
+    "component": "^1.0.0",
+    "isomorphic-react": "^1.0.0",
+    "isomorphic-react-dom": "^1.0.0"
+  }
+}

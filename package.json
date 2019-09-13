@@ -1,0 +1,22 @@
+{
+  "name": "react-hooks-test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "bootstrap": "lerna run bootstrap",
+    "build": "lerna run build --stream",
+    "start": "npm run build && lerna run start --parallel --stream"
+  },
+  "author": "William Wong <compulim@hotmail.com> (http://compulim.info/)",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "lerna": "^3.5.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.0"
+  }
+}
